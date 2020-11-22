@@ -21,6 +21,12 @@ ul {
   padding: 0;
   margin: 0;
 }
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 a,
 .logo,
@@ -61,6 +67,8 @@ a,
   background-color: var(--hero-footer-bg);
 }
 .hero-bg {
+  padding-top: 0;
+  padding-bottom: 94px;
   text-align: center;
 }
 
@@ -74,8 +82,23 @@ a,
   letter-spacing: 0.06em;
 }
 /* site nav */
+.site-nav {
+  display: flex;
+}
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -89,9 +112,16 @@ a,
 .site-nav a:focus {
   color: var(--accent-color);
 }
+/* особенности */
+.especially-bg {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: lawngreen;
+}
+
 .section {
-  padding: 0;
-  margin: 0;
+  margin-top: 94px;
+  margin-bottom: 10px;
   color: var(--primary-text-color);
   text-transform: uppercase;
   font-weight: 700;
@@ -114,8 +144,10 @@ a,
   line-height: 1.7;
   letter-spacing: 0.06em;
 }
-
+/* чем мы занимаемся */
 .work-section {
+  margin-top: 94px;
+  margin-bottom: 50px;
   color: var(--primary-text-color);
 
   font-style: normal;
@@ -124,6 +156,18 @@ a,
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
+.work-bg {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: lightsalmon;
+}
+/* наша команда */
+.team-bg {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--portfolio-bg-buttons);
+}
+
 .team-section {
   font-weight: 500;
   font-size: 16px;
@@ -159,13 +203,6 @@ a,
 .contacts-nav a:hover,
 .contacts-nav a:focus {
   color: var(--accent-color);
-}
-
-/* особенности */
-/* general bg */
-
-.team-bg {
-  background-color: var(--portfolio-bg-buttons);
 }
 
 /* button */
