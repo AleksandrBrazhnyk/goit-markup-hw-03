@@ -15,6 +15,14 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+/* утилиты */
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 ul {
   list-style: none;
@@ -46,7 +54,10 @@ a,
 /* цвет фона наша команда #F5F4FA */
 
 /* шапка */
+
 .top-line {
+  display: flex;
+  align-items: center;
   background-color: var(--hero-text-color);
 }
 .logo {
@@ -56,6 +67,27 @@ a,
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+/* contacts nav */
+.contacts-nav .link {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts-nav a:hover,
+.contacts-nav a:focus {
+  color: var(--accent-color);
+}
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.contacts-nav .item + .item {
+  margin-left: 50px;
 }
 
 .logo-part {
@@ -84,6 +116,7 @@ a,
 /* site nav */
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 /* .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -114,11 +147,16 @@ a,
 }
 /* особенности */
 .especially-bg {
-  padding-top: 94px;
+  padding-top: 0;
   padding-bottom: 94px;
   background-color: lawngreen;
 }
-
+.text-section {
+  display: flex;
+}
+.text-section .item + .item {
+  margin-left: 30px;
+}
 .section {
   margin-top: 94px;
   margin-bottom: 10px;
@@ -191,25 +229,13 @@ a,
   letter-spacing: 0.03em;
 }
 
-/* contacts nav */
-.contacts-nav .link {
-  color: var(--title-text-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.contacts-nav a:hover,
-.contacts-nav a:focus {
-  color: var(--accent-color);
-}
-
 /* button */
 .button {
   color: var(--accent-color);
 }
 .studio-button {
+  margin-top: 0;
+  margin-bottom: 200px;
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -260,10 +286,15 @@ a,
   font-size: 14px;
   line-height: 1.71;
 }
-
-.container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+/* порьфолио */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-elements {
+  width: 370px;
+  margin-right: 30px;
+}
+.product-elements:nth-child(3n) {
+  margin-right: 0;
 }
