@@ -63,12 +63,14 @@ a,
 /* цвет фона наша команда #F5F4FA */
 
 /* шапка */
+.page-header > .container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
 .top-line {
   display: flex;
   align-items: center;
-}
-.top {
-  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -97,8 +99,8 @@ a,
 
 .contacts-nav {
   display: flex;
-  flex-direction: column;
-  /* margin-left: auto; */
+  
+  margin-left: auto;
 }
 /* .contacts-nav .footer {
   display: block;
@@ -290,7 +292,6 @@ a,
   letter-spacing: 0.06em;
 }
 .portfolio-button {
-  
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -323,24 +324,21 @@ a,
 .address {
  margin-top: 20px;
 }
-.address-text {
 
+.address-text {
   color: var(--hero-text-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
-.link.footer {
-  margin-top: 9px;
-}
 
 .logo-footer {
-
   color: var(--hero-text-color);
 }
-.contacts-nav .footer {
 
+.contacts-nav .footer {
+  margin-top: 9px;
   color: var(--contact-link-footer);
   font-weight: 400;
   font-size: 14px;
